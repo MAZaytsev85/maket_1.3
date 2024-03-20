@@ -10,77 +10,73 @@
 </head>
 
 <body>
-<!-- Шапка -->
-		<header class="header">
-				<!-- Левый блок хэдера, иконка бургера и логотип -->
-				<div class="header__block block_left"> 
-						<div class="header__icon icon_left"><a href="#"><img src="images/burger.svg" alt="burger" /></a></div>
-						<div class="header__logo"><img src="images/Group.svg" alt="logo" /></div>
-				</div>
-				<!-- Центральный блок хэдера, три иконки -->
-				<div class="header__block block_center">
-						<a class="header__icon icon_center" href="#"><img src="images/call.svg" alt="call" /></a>
-						<a class="header__icon icon_center" href="#"><img src="images/chat.svg" alt="chat" /></a>
-						<a class="header__icon icon_center" href="#"><img src="images/profile.svg" alt="profile" /></a>
-				</div>
-				<!-- Правый блок хэдера, две иконки -->
-				<div class="header__block block_right">
-						<div class="header__icon icon_right icon_border_left"><a href="#"><img src="images/repair.svg" alt="repair" /></a></div>
-						<div class="header__icon icon_right"><a href="#"><img src="images/checkstatus.svg" alt="chek" /></a></div>
-				</div>
-		</header>
-<!-- Основное меню -->
-		<main>
-			<!-- Шапка основного меню -->
-				<section class="title_bar">
-						<!-- Заголовок -->
-						<div class="fulsize_title">
-								<h1 class="main_title">Услуги и сервисы</h1>
-						</div>
-						<!-- Скрытая часть, доступная в расширении 1120+ -->
-						<div class="fulsize_rightbar">
-								<div class="title_bar_text"><span>Оставить заявку</span></div>
-								<div class="header__icon icon_right"><a href="#"><img src="images/repair.svg" alt="repair" /></a></div>
-								<div class="title_bar_text"><span>Статус ремонта</span></div>
-								<div class="header__icon icon_right"><a href="#"><img src="images/checkstatus.svg" alt="chek" /></a></div>
-						</div>
-				</section>
-				<!-- Меню навигации -->
-				<nav>
-						<!-- Список кнопок навигации -->
-						<ul class="navbar">
-								<li class="navbar_li"><button class="navbar__button button_first">Ремонтируемые устройства</button></li>
-								<li class="navbar_li"><button class="navbar__button">Дополнительные услуги</button></li>
-								<li class="navbar_li"><button class="navbar__button">Цены на услуги</button></li>
-								<li class="navbar_li"><button class="navbar__button">Специальные цены</button></li>
-								<li class="navbar_li"><button class="navbar__button">Адреса сервисных центров</button></li>
-								<li class="navbar_li"><button class="navbar__button">Отзывы</button></li>
-								<li class="navbar_li"><button class="navbar__button">Акции</button></li>
-								<li class="navbar_li"><button class="navbar__button">Контакты</button></li>
-						</ul>
-				</nav>
-				<!-- Секция основного контента -->
-				<section class="content">
-						<!-- Блок для статьи и ссылки на развертывания текста -->
-						<div class="left_side">
-								<!-- Статья -->
-								<div class="content_top">
-										<p class="content_text">
-										Мы являемся авторизованным сервисным центром по ремонту техники
-										Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-										официальной гарантией производителя.</p>
-										<p class="content_text">Мы успешно работаем с 1992 года и заслужили репутацию
-										надежного партнера, что подтверждает большое количество постоянных клиентов.
-										Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют
-										нас родным и близким.</p>
+				<!-- Шапка -->
+				<header class="header">
+								<!-- Левый блок хэдера, иконка бургера и логотип -->
+								<div class="header__block block_left"> 
+												<button class="header__icon icon_left"><img src="images/burger.svg" alt="burger"></button>
+												<div class="header__logo"><img src="images/Group.svg" alt="logo" /></div>
 								</div>
-								<!-- Ссылка на развертывание текста -->
-								<div class="content_center"><a class="content_link content_text" href="#"><img src="images\expand.svg" alt="" />Читать далее</b></a></div>
-						</div>
-						<!-- Блок полноцветной картинки к статье -->
-						<div class="content_img"><img width="100%" src="images\3223.jpg" alt="Фото логотипа компании" /></di>
-				</section>
-		</main>
+								<!-- Центральный блок хэдера, три иконки -->
+								<ul class="header__block block_center">
+												<li><button class="header__icon icon_center"><img src="images/call.svg" alt="call" /></button></li>
+												<li><button class="header__icon icon_center"><img src="images/chat.svg" alt="chat" /></button></li>
+												<li><button class="header__icon icon_center"><img src="images/profile.svg" alt="profile" /></button></li>
+								</ul>
+								<!-- Правый блок хэдера, две иконки -->
+								<ul class="header__block block_right">
+												<li><button class="header__icon icon_border_left"><img src="images/repair.svg" alt="repair" /></button></li>
+												<li><button class="header__icon"><img src="images/checkstatus.svg" alt="chek" /></button></li>
+								</ul>
+				</header>
+				<!-- Основное меню -->
+				<main>
+								<!-- Шапка основного меню -->
+								<section class="title_bar">
+												<!-- Заголовок -->
+												<h1 class="main_title fulsize_title">Услуги и сервисы</h1>
+												<!-- Скрытая часть, доступная в расширении 1120+ -->
+												<ul class="fulsize_rightbar">
+																<li class="title_bar_text">Оставить заявку<button class="header__icon"><img src="images/repair.svg" alt="repair" /></button></li>
+																<li class="title_bar_text">Статус ремонта<button class="header__icon"><img src="images/checkstatus.svg" alt="chek" /></button></li>
+												</ul>
+								</section>
+								<!-- Меню навигации -->
+								<nav>
+												<!-- Список кнопок навигации -->
+												<ul class="main__navbar navbar_li">
+																<li><button class="navbar_button button_first">Ремонтируемые устройства</button></li>
+																<li><button class="navbar_button">Дополнительные услуги</button></li>
+																<li><button class="navbar_button">Цены на услуги</button></li>
+																<li><button class="navbar_button">Специальные цены</button></li>
+																<li><button class="navbar_button">Адреса сервисных центров</button></li>
+																<li><button class="navbar_button">Отзывы</button></li>
+																<li><button class="navbar_button">Акции</button></li>
+																<li><button class="navbar_button">Контакты</button></li>
+												</ul>
+								</nav>
+								<!-- Секция основного контента -->
+								<section class="content">
+												<!-- Блок для статьи и ссылки на развертывания текста -->
+												<div class="left_side">
+																<!-- Статья -->
+																<div class="content_top">
+																				<p class="content_text">
+																				Мы являемся авторизованным сервисным центром по ремонту техники
+																				Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+																				официальной гарантией производителя.</p>
+																				<p class="content_text">Мы успешно работаем с 1992 года и заслужили репутацию
+																				надежного партнера, что подтверждает большое количество постоянных клиентов.
+																				Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют
+																				нас родным и близким.</p>
+																</div>
+																<!-- Ссылка на развертывание текста -->
+																<button class="content_link content_center content_text"><img src="images\expand.svg" alt="" />Читать далее</button>
+												</div>
+																<!-- Блок полноцветной картинки к статье -->
+												<div class="content_img"><img width="100%" src="images\3223.jpg" alt="Фото логотипа компании" /></div>
+								</section>
+				</main>
 </body>
 	
 </html>
