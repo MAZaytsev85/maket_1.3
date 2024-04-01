@@ -39,10 +39,10 @@ main {
 	background-color: #ffffff;
 }
 
-/* Иконка больше при наведении */
+/* Иконка блюрится при наведении */
 .header__icon:hover {
-	width: 50px;
-	height: 50px;
+	filter: blur(2px);
+	transition: 1s;
 }
 
 /* Стилизуем левый блок шапки с иконкой бургера и логотипом */
@@ -114,13 +114,15 @@ main {
 	color: #7e7e82;
 	background-color: #f8f8f8;
 	border: none;
-	padding: 15px;
+	padding: 0 15px;
+	text-decoration: none;
 }
 
 /* Кнопка списка меняет цвет и размер при наведении */
 .navbar_button:hover {
 	font-size: 18px;
 	color: #161646;
+	transition: 1s;
 }
 
 /* Для первой кнопки добавляем декоративный разделитель слева */
@@ -192,7 +194,7 @@ main {
 	display: none;
 }
 
-																																			/* Слилизация для расширения 768 */
+															/* Слилизация для расширения 768 */
 
 @media (min-width: 768px) {
 
@@ -212,6 +214,10 @@ main {
 	.block_right {
 		width: 25%;
 		justify-content: space-evenly;
+	}
+
+	.header__icon {
+		background-color: #f8f8f8;
 	}
 
 /* назначаем видимое переполнение списку навигации (как на макете) */
@@ -265,7 +271,7 @@ main {
 
 }
 
-																																							/* Слилизация для расширения 1120 */
+														/* Слилизация для расширения 1120 */
 
 @media (min-width: 1120px) {
 
@@ -281,7 +287,7 @@ main {
 		row-gap: 10px;
 	}
 
-/* Выравниваем блок с заголовкой, делаем его флексом с расположением элементов по краям */
+	/* Выравниваем блок с заголовкой, делаем его флексом с расположением элементов по краям */
 	.title_bar {
 		padding-top: 42px;
 		display: flex;
@@ -307,4 +313,112 @@ main {
 		padding-right: 10px;
 		align-items: center;
 	}
+}
+
+										/* Стилизация сайдбара, макет 1.4 */
+
+/* Задаем ширину и тень и фон основному блоку */
+
+.sidebar {
+ 	width: 320px;
+ 	box-shadow: 16px 0 52px #0E185033;
+}
+.sidebar_main {
+	background-color: #ffffff;
+}
+
+/* Выравниваем кнопки и логотип в хедере */
+.sidebar_header {
+	display: flex;
+	width: 100%;
+	height: 88px;
+	justify-content: space-around;
+}
+
+.sidebar .block_left {
+	justify-content: space-around;
+	margin-left: -30px;
+}
+
+/* Задаем стили текста для загаловка */
+.sidebar_title {
+	display: inline-block;
+	font-family: 'TT Lakes', Arial, sans-serif;
+	font-size: 16px;
+	border-left: #41f6d7 4px solid;
+	margin: 46px 0 16px 0;
+	padding-left: 20px;
+	color: #7E7E82;
+	font-weight: 500;
+}
+
+/* Убираем лишние элементы у списка и выравниваем его */
+.sidebar_li{
+	list-style: none;
+	padding-left: 9px;
+	margin-bottom: 268px;
+}
+
+/* Задаем стили текса ссылкам */
+.sidebar_li a{
+	list-style: none;
+	background-color: #ffffff;
+	font-family: 'TT Lakes', Arial, sans-serif;
+	font-size: 16px;
+	color: #1B1C21;
+	margin-bottom: 28px;
+	font-weight: 500;
+}
+
+/* Делаем флекс контейнер с кнопками навигации футера */
+.sidebar_button_li {
+	display: flex;
+	width: 60%;
+	list-style: none;
+	padding-left: 0px;
+	justify-content: space-evenly;
+}
+
+/* Стилизуем текст блока с адресом */
+.sidebar_address .mail {
+	font-family: 'TT Lakes', Arial, sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	padding-left: 24px;
+	font-weight: 500;
+}
+
+.sidebar_address .phone {
+	font-family: 'TT Lakes', Arial, sans-serif;
+	font-style: normal;
+	font-size: 24px;
+	padding-left: 24px;
+	font-weight: 700;
+}
+
+/* Выравниваем кнопки выбора языка */
+.len_menu .sidebar_button_li {
+	justify-content: left;
+	padding-left: 20px;
+}
+
+/* Добавляем эффект при наведении */
+.len_menu > .sidebar_button_li > li > button:hover {
+	font-size: 18px;;
+	transition: 1s;
+}
+
+/* Стилизуем текст меню выбора языка */
+.len_menu > .sidebar_button_li > li > button{
+	border: none;
+	background-color: #ffffff;
+	font-family: 'TT Lakes', Arial, sans-serif;
+	font-style: normal;
+	font-size: 16px;
+	color: #1B1C21;
+}
+
+/* Отдельно стилизуем активную кнопку */
+.len_menu .sidebar_button_li .active {
+	color: #7E7E82;
 }
