@@ -336,8 +336,8 @@ main {
 }
 
 .sidebar .block_left {
-	justify-content: space-around;
-	margin-left: -30px;
+	justify-content: space-between;
+	margin-left: -20px;
 }
 
 /* Задаем стили текста для загаловка */
@@ -346,12 +346,16 @@ main {
 	font-family: 'TT Lakes', Arial, sans-serif;
 	font-size: 16px;
 	border-left: #41f6d7 4px solid;
-	margin: 46px 0 16px 0;
+	margin: 30px 0 16px 0;
 	padding-left: 20px;
 	color: #7E7E82;
 	font-weight: 500;
 }
 
+.sidebar_title:hover {
+	font-size: 18px;;
+	transition: 1s;
+}
 /* Убираем лишние элементы у списка и выравниваем его */
 .sidebar_li{
 	list-style: none;
@@ -366,7 +370,7 @@ main {
 	font-family: 'TT Lakes', Arial, sans-serif;
 	font-size: 16px;
 	color: #1B1C21;
-	margin-bottom: 28px;
+	margin-bottom: 18px;
 	font-weight: 500;
 }
 
@@ -379,21 +383,44 @@ main {
 	justify-content: space-evenly;
 }
 
-/* Стилизуем текст блока с адресом */
+/* Стилизуем блок с адресом */
+.sidebar_address {
+	display: flex;
+	flex-direction: column;
+}
+
 .sidebar_address .mail {
 	font-family: 'TT Lakes', Arial, sans-serif;
 	font-style: normal;
 	font-size: 16px;
+	color: #1B1C21;
 	padding-left: 24px;
 	font-weight: 500;
+	margin-bottom: 10px;
+	text-decoration: none;
+}
+
+/* Добавляем эффект при наведении на мейл */
+.sidebar_address .mail:hover  {
+	font-size: 18px;;
+	transition: 1s;
 }
 
 .sidebar_address .phone {
 	font-family: 'TT Lakes', Arial, sans-serif;
 	font-style: normal;
 	font-size: 24px;
+	color: #1B1C21;
 	padding-left: 24px;
 	font-weight: 700;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+
+/* Добавляем эффект при наведении на телефон */
+.sidebar_address .phone:hover {
+	font-size: 26px;;
+	transition: 1s;
 }
 
 /* Выравниваем кнопки выбора языка */
