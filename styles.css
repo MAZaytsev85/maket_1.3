@@ -503,6 +503,11 @@ main {
 	border: 1px solid #EAEAEA;
 }
 
+.list__brendbarItem:hover {
+	box-shadow: 1px 1px 3px 1px inset #bcbcc2,
+	-1px -1px 3px 1px inset #bcbcc2;
+}
+
 /* Меняем размер на планшете */
 @media (min-width: 768px) and (max-width: 1119px){
 	.list__brendbarItem {
@@ -541,6 +546,10 @@ main {
 	background-color: #f8f8f8;
 	color: #1B1C21;
 	display: none;
+}
+
+.button__link:hover {
+	font-size: 17px;
 }
 
 /* Показываем кнопку после мобилки */
